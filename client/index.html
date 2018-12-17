@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  
+    <!-- Styling -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href='assets/css/appleFeature/appleFeature.css'>
+    <link rel="stylesheet" type="text/css" href='assets/css/sportTemplate/sportTemplate.css'>
+    <link rel="stylesheet" type="text/css" href='assets/css/appPromo/appPromo.css'>
+
+    <!--CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+
+    <!-- MISC JS -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/appleFeature.js"></script>
+    <script type="text/javascript" src="assets/js/sportTemplate.js"></script>
+    <script type="text/javascript" src="assets/js/appPromo.js"></script>
+
+
+    <!-- <script type="text/javascript" src="assets/js/hover_pack.js"></script> -->
+    <script src="assets/app.js"></script>
+
+    <!--Factories -->
+    <script src='assets/factories/appleFeatureFactory.js'></script>
+
+    <!--Controllers-->
+    <script src='assets/controllers/appleFeatureController.js'></script>
+
+    <!--Everytime you make a new controller you need to link it in your index-->
+    </head>
+      <body ng-app='dailySun'>
+    <!--NG-App basically links this your apps name-->
+    <div ng-view autoscroll="true">
+    <!-- This is where you put your partials-->
+    </div>
+  </body>
+</html>

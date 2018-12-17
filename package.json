@@ -1,0 +1,18 @@
+{
+  "name": "dailySun",
+  "version": "1.0.0",
+  "description": "Cornell Daily Sun One Off Framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Ra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.15.6",
+    "npm": "^5.8.0",
+    "package.json": "^2.0.1"
+  }
+}

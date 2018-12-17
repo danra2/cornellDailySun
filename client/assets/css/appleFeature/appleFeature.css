@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/appleFeature/Courgette/Courgette-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/appleFeature/Merienda/Merienda-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Neucha';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/appleFeature/Neucha/Neucha.ttf);
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/appleFeature/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/appleFeature/Open_Sans/OpenSans-Regular.ttf);
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#left-panel {
+  width: 20%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+#right-panel {
+  height: 100%;
+}
+
+#story-title-container {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+#story-title {
+  font-family: "Neucha";
+  font-size: 110px;
+  color: white;
+}
+
+#landing-section {
+  height: 100%;
+  background-color: white;
+  padding: 0px;
+}
+
+#landing-background-image-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+#landing-background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/appleFeature/apple1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#landing-background-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to right, #fffbd5, #b20a2c);
+   opacity: 0.7;
+}
+
+#prologue-section {
+  /* position: absolute; */
+  height: 100%;
+  background-color: white;
+  padding: 0px;
+  position: relative;
+  /* bottom: -100%; */
+}
+
+#prologue-background-image-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+#prologue-background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/appleFeature/apple7.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#prologue-background-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to right, #fffbd5, #b20a2c);
+   opacity: 0.7;
+}
+
+#apple-step-tracker {
+  position: absolute;
+  top: -2%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 18%;
+  padding-bottom: 18%;
+  background-image: url('../../images/appleFeature/apple-bordered.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+#step-line-tracker {
+  position: absolute;
+  top: 0%;
+  left: 7.5%;
+  bottom: 100%;
+  background-color: rgb(97, 240, 119);
+  width: 5%;
+  z-index: 3;
+}
+
+#step-marker-container {
+  /* border: 1px solid white; */
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-outer {
+  position: relative;
+  flex: 1;
+  /* border: 1px solid black; */
+  padding: 10px 0px;
+}
+
+.step-line {
+  position: absolute;
+  left: 7.5%;
+  top: 0px;
+  height: 100%;
+  width: 5%;
+  background-color: white;
+}
+
+.step-outer:last-child > .step-line {
+  height: 50%;
+}
+
+.step-marker {
+  background-color: white;
+  width: 20%;
+  padding-bottom: 20%;
+  border-radius: 50%;
+  border: 5px solid white;
+  /* box-sizing: border-box; */
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.step-name {
+  font-family: "Neucha";
+  font-size: 36px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-title {
+  font-family: "Neucha";
+  font-size: 46px;
+  font-weight: bold;
+  color: #eb3349;
+  text-align: center;
+}
+
+.story-section {
+  position: relative;
+  background-color: white;
+  margin-left: 20%;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  font-family: "Open Sans";
+}
+
+.story-inner-text {
+  padding: 0px 100px;
+}
+
+.photo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.photo-container > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.photo-container:last-child {
+  margin-right: 0px;
+}
+
+.photo-container > div > img {
+  width: 100%;
+}
+
+.special-quote-container {
+  padding: 0px 100px;
+}
+
+.special-quote {
+  border-left: 12px solid #eb3349;
+  color: #eb3349;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+}
